@@ -1,0 +1,8 @@
+CAD_huge_paste_extruder/
+firmware/
+gcodes/
+macros/
+sys/
+sys_backup/
+sys_multitool/
+www/
