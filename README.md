@@ -9,7 +9,7 @@ Fungibot is a custom extrusion end-effector for biopaste. It has been used to 3D
 
 Fungibot comprises two main subsystems: the material reservoir and the printhead. The CAD files are attached in [CADs](./CADs). Fabrication settings and assembly instruction will be available soon!
 
-[Fungibot_system](./images/fungibot.jpg)
+![Fungibot_system](./images/fungibot.jpg)
 
 ### Fungibot hardware
 
