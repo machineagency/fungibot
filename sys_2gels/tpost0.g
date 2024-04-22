@@ -6,7 +6,7 @@
 
 ; Note that commands preempted with G53 will NOT apply the tool offset.
 
-G53 G0 X234.8 Y225 F17000  ; Rapid to the approach position without any current tool.
+G53 G0 X45 Y225 F17000  ; Rapid to the approach position without any current tool.
 ;M302 P0                  ; Prevent Cold Extrudes, just in case temp setpoints are at 0
 ;G1 E10 F100              ; Purge the Nozzle
 ;G4 S1                    ; Slight Delay
@@ -15,8 +15,8 @@ G91                      ; Set Relative Movements
 G1 Z50                    ; Pop the Z up slightly to avoid scraping carriage limit switch on pull-back for early layers.
                          ; Also clear any dangling debris on purge towers.
 G90                      ; Restore Absolute Movements
-G53 G1 Y335.7 F6000        ; Move to the pickup position with tool-0.
-G53 G1 Y336.2 F600        ; Contact the coupler by pushing on it.
+G53 G1 Y384 F6000        ; Move to the pickup position with tool-0.
+G53 G1 Y384.5 F600        ; Contact the coupler by pushing on it.
 M98 P"/macros/tool_lock.g" ; Lock the tool
 
 ;M116 P0                  ; Wait for set temperatures to be reached
@@ -27,7 +27,6 @@ G53 G1 Y225 F6000        ; Retract the entire tool and wipe Backwards.
 ;G53 G1 Y336 F10000       ; Wipe Forwards.
 ;G53 G1 Y296 F10000       ; Wipe Backwards.
 
-
-G1 R2 X0 Y0 Z0   ; Restore prior position now accounting for new tool offset
+G1 R2 X0 Y0 Z0  ; Restore prior position now accounting for new tool offset
 
 M106 R2           ; restore print cooling fan speed

@@ -5,7 +5,7 @@ M143 H2 S100									; Set maximum temperature for hotend to 100C
 
 ;M584 E0.0 R0 S0             ; Gel Extruder with linear plunger
 ;M906 E{0.8*1300}             ; 80% of 1300mA Peak current rating
-M563 P0 S"GelExtruder" D0.0 H2; Px = Tool number
+M563 P0 S"GelExtruder #1" D0.0 H2; Px = Tool number
                             ; Dx = Drive Number
                             ; H1 = Heater Number
 M569 P0.0 S0				; Invert drive 0.0 (Gel Extruder)

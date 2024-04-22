@@ -140,15 +140,15 @@ M563 P0 S"Shroom extruder" D0:1; Px = Tool number
                             ; Dx = Drive Number - not the address
                             ; H1 = Heater Number
 M568 P0 S1 					; Enable mixing for tool 0
-M567 P0 E1.00:47			; define mixing ratio
+M567 P0 E1.00:470			; define mixing ratio
 
                             ; Fx = Fan number print cooling fan
 M350 E16:16 I1                  ; Microstep Factor with interpolation
-M92 E12240:200					; steps per mm - 1.8 deg stepper / lead (2mm) of screw gear ratio 15.3
+M92 E24480:200					; steps per mm - 1.8 deg stepper / lead (2mm) of screw gear ratio 15.3
 M201 E1000:1000					; Extruder Acceleration
 M203 E500:500
 ;G10 P0 X0 Y44.8679 Z0
-G10 P0 X0 Y44.8679 Z-18.66
+G10 P0 X0 Y44.8679 Z-23.72
 ;G10  P0 S0 R0               ; Set tool 0 operating and standby temperatures
                             ; (-273 = "off")
 ;M572 D0 S0.085              ; Set pressure advance
